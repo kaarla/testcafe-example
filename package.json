@@ -4,7 +4,9 @@
   "description": "testcafe project",
   "main": "index.js",
   "scripts": {
-    "test-all-chrome": "testcafe chrome page_model/test"
+    "test-all-chrome": "testcafe \"chrome:headless\" page_model/test",
+    "test-inventory": "testcafe \"chrome:headless\" page_model/test/InventoryTest.js --screenshots on-fail --screenshots-path screenshots",
+    "test-safari": "testcafe safari page_model/test/InventoryTest.js --screenshots on-fail --screenshots-path screenshots"
   },
   "author": "kaarla",
   "license": "ISC",

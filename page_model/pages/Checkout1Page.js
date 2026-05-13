@@ -1,5 +1,5 @@
 import {Selector, t} from 'testcafe'
-import Checkout2Page from '../pages/Checkout1Page'
+import Checkout2Page from '../pages/Checkout2Page'
 
 class Checkout1Page {
   constructor() {

@@ -25,7 +25,7 @@ test ('Checkout continue providing information', async t =>{
     await Checkout1Page.submitCheckoutInfo(CONTACT_INFO.LAST_NAME, CONTACT_INFO.ZIP)
 
     await t.expect(Checkout2Page.pageTitle.exists).ok()
-      .expect(Checkout2Page.pageTitle.innerText).contains('OVERVIEW')
+      .expect(Checkout2Page.pageTitle.innerText).contains('Overview')
 })
 
 test ('Checkout cannot continue without providing information', async t =>{
@@ -47,5 +47,5 @@ test ('Check final order items and comfirms', async t =>{
     .expect(Checkout2Page.backpackItem.exists).ok()
     .click(Checkout2Page.finishButton)
     .expect(CheckoutCompletePage.thanksImage.exists).ok()
-    .expect(CheckoutCompletePage.thanksMessage.innerText).contains("THANK YOU")
+    .expect(CheckoutCompletePage.thanksMessage.innerText).contains("Thank you")
 })
